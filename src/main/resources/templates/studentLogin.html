@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Login</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;900&display=swap');
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: rgb(188, 249, 254);
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .form-body {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            width: 400px;
+        }
+
+        .form-content {
+            padding: 20px;
+        }
+
+        .form-items {
+            text-align: center;
+        }
+
+        h3 {
+            color: #333;
+            font-weight: 700;
+        }
+
+        p {
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        input.form-control {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        .form-button {
+            text-align: center;
+        }
+
+        button.btn-primary {
+            background-color: #3498db;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button.btn-primary:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="form-body">
+        <div class="form-content">
+            <div class="form-items">
+                <h3>Student Login</h3>
+                <p>Fill in the data below.</p>
+                <form action="/studentLoginpage" method="get">
+                    <div class="col-md-12">
+                        <input class="form-control" type="text" name="regnumber"
+                            placeholder="Enter the Register Number" required>
+                    </div>
+
+                    <div class="form-button mt-3">
+                        <button id="submit" type="submit" class="btn btn-primary">Submit</button>
+                    </div>
+                     
+                </form>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

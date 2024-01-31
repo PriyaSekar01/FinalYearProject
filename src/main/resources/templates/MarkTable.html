@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="ISO-8859-1">
+    <title>Student Management System</title>
+    <link rel="stylesheet"
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+          crossorigin="anonymous">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="/">Student Management system</a>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+       <form action="/studentlogin" method="get">
+                    <button type="submit" class="btn btn-primary">Stdent View Results</button>
+                </form>
+      </li>
+    </ul>
+  </div>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+	  <ul class="navbar-nav ml-auto"> <!-- Add ml-auto class for right alignment -->
+            <li class="nav-item">
+                <form action="/eventTable" method="get">
+                    <button type="submit" class="btn btn-primary">Event registration</button>
+                </form>
+            </li>
+        </ul>
+        <ul class="navbar-nav ml-auto"> <!-- Add ml-auto class for right alignment -->
+            <li class="nav-item">
+                <form action="/logoutStudent" method="get">
+                    <button type="submit" class="btn btn-primary">Logout</button>
+                </form>
+            </li>
+        </ul>
+    </div>
+    </nav>
+
+    <div class="container text-center mt-4">
+        <h1>BHARATHIDASAN UNIVERSITY</h1>
+        <h4>TIRUCHIRAPPALLI - 620 024.</h4>
+        <h2>B.Sc. COMPUTER SCIENCE</h2>
+    </div>
+
+    <div class="container">
+        </p>Department of Computer Science and Applications has been established in the Academic year 2005-2006. This department is an integral part of School of Computer Science, Engineering and Applications and is located in City Campus at Khajamalai. The Computer Science field is one of the fastest growing and highest paying career paths in the world. The main objective of the department is to produce worldwide competitive, highly skilled, socially responsible Computer Science graduates who can work in highly challenging technology and ever dynamic industry besides research and development.
+
+The Department has conducive infrastructure for carrying out cutting edge research in Computer Science related domains. The curriculum is carefully crafted to meet the current trends and upcoming technologies with the help of experts who meet almost every year for review the syllabus dynamically. The library houses around 3700 volumes of books augmented by a digital library of hundred plus e-books. Being the member of professional bodies like IEEE and ACM, we receive journals and magazines periodically. The thrust research areas of the faculty members include Semantic Web, Machine Learning. AI, Ontology, QoS, Networks, Bio-Informatics, etc. We offer research programmes leading to PhD in both Science and Engineering streams. As an innovation, the Bharathidasan University Technology Park (BUTP) is an integral part of School, established in 2005 for fostering IT culture in tier-2 city of Tiruchirappalli, which stands persistently as a unique proof for the true Industry-Institute-Interaction.</p>
+        
+
+       
+   
+
+</body>
+</html>

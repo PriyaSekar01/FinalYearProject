@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Event List</title>
+</head>
+<body>
+    <h2>Event List</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Student Name</th>
+                <th>Department</th>
+                <th>Year</th>
+                <th>Event</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr th:each="event : ${events}">
+                <td th:text="${event.id}"></td>
+                <td th:text="${event.stuName}"></td>
+                <td th:text="${event.department}"></td>
+                <td th:text="${event.year}"></td>
+                <td th:text="${event.event}"></td>
+            </tr>
+        </tbody>
+    </table>
+    <a th:href="@{/events/create}">Create Event</a>
+</body>
+</html>
